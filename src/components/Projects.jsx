@@ -1,15 +1,14 @@
-import { Github, ExternalLink } from "lucide-react"
+import { Github } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
     {
-      title: "Bpay System",
+      title: "Food delivery System",
       description:
-        "A comprehensive payment management system for bike owners that simplifies daily payments, transaction tracking, and recurring income management.",
+        "A food delivery system that allows users to order food from restaurants and have it delivered to their doorstep.",
       image: "/placeholder.svg?height=200&width=400",
       technologies: ["React", "Spring Boot", "Java", "MySQL"],
-      githubUrl: "#", // Add your GitHub link when available
-      liveUrl: "#", // Add live demo link when available
+      githubUrl: "https://github.com/moses12-bi/food-delivery-system", // Add your GitHub link when available
     },
     {
       title: "Stock Management System",
@@ -17,8 +16,7 @@ const Projects = () => {
         "A robust inventory management solution that handles sales, purchases, and provides graphical reports for better business insights.",
       image: "/placeholder.svg?height=200&width=400",
       technologies: ["Java", "Spring Boot", "MySQL", "JSP"],
-      githubUrl: "#", // Add your GitHub link when available
-      liveUrl: "#", // Add live demo link when available
+      githubUrl: "https://github.com/moses12-bi/inventory-management-system", // Add your GitHub link when available
     },
   ]
 
@@ -50,15 +48,6 @@ const Projects = () => {
                     <Github size={16} />
                     Code
                   </a>
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors text-sm"
-                  >
-                    <ExternalLink size={16} />
-                    Live Demo
-                  </a>
                 </div>
               </div>
             </div>
@@ -69,4 +58,4 @@ const Projects = () => {
   )
 }
 
-export default Projects 
+export default Projects;

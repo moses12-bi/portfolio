@@ -5,7 +5,7 @@ import autoprefixer from 'autoprefixer'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/portfolio/',
+  base: '/portfolio/', // This is correct for Netlify or GitHub Pages at /portfolio/
   plugins: [react()],
   css: {
     postcss: {

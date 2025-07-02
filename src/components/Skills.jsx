@@ -2,7 +2,7 @@ const Skills = () => {
   const skillCategories = [
     {
       title: "Programming & Development",
-      skills: ["React", "Spring Boot", "Java", "C++", "C", "PHP", "JavaScript", "HTML", "CSS"],
+      skills: ["React", "Spring Boot", "Java", "C++", "C", "PHP", "JavaScript", "HTML", "CSS", "SQL"],
     },
     {
       title: "Network & Systems",
@@ -17,7 +17,12 @@ const Skills = () => {
         "Microsoft 365 Certified"
       ],
     },
-    
+    {
+      title: "Teaching & Training",
+      skills: [
+        "Digital Marketing - SCRIPTY LABS"
+      ],
+    },
   ]
 
   return (
@@ -46,4 +51,4 @@ const Skills = () => {
   )
 }
 
-export default Skills 
+export default Skills

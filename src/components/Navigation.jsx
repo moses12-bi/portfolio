@@ -1,7 +1,9 @@
 import { useState } from "react"
-import { Menu, X } from "lucide-react"
+import { Menu, X, Sun, Moon } from "lucide-react"
+import { useTheme } from "../contexts/ThemeContext"
 
 const Navigation = () => {
+  const { theme, toggleTheme } = useTheme()
   const [isOpen, setIsOpen] = useState(false)
 
   const scrollToSection = (sectionId) => {

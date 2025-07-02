@@ -7,15 +7,15 @@ const Projects = () => {
       description:
         "A food delivery system that allows users to order food from restaurants and have it delivered to their doorstep.",
       image: "/placeholder.svg?height=200&width=400",
-      technologies: ["React", "Spring Boot", "Java", "MySQL"],
+      technologies: [ "Spring Boot", "postman", "postgresql"],
       githubUrl: "https://github.com/moses12-bi/food-delivery-system", // Add your GitHub link when available
     },
     {
       title: "Stock Management System",
       description:
-        "A robust inventory management solution that handles sales, purchases, and provides graphical reports for better business insights.",
+        "A robust inventory management solution that handles sales, purchases, and provides graphical reports for better business insights and security measures for login .",
       image: "/placeholder.svg?height=200&width=400",
-      technologies: ["Java", "Spring Boot", "MySQL", "JSP"],
+      technologies: ["react", "Spring Boot", "postgresql", "postman"],
       githubUrl: "https://github.com/moses12-bi/inventory-management-system", // Add your GitHub link when available
     },
   ]

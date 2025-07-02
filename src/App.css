@@ -9,6 +9,34 @@ body {
   min-height: 100vh;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #1a1a2e;
+    color: #ffffff;
+  }
+  main {
+    background: #22223b;
+  }
+  section {
+    background: #22223b;
+  }
+  nav {
+    background: rgba(42, 42, 78, 0.95);
+  }
+  .text-gray-600 {
+    color: #bfc0c9;
+  }
+  .text-gray-900 {
+    color: #ffffff;
+  }
+  .bg-gray-200 {
+    background-color: #2d2d44;
+  }
+  .border-gray-200 {
+    border-color: #2d2d44;
+  }
+}
+
 main {
   margin-top: 64px;
 }

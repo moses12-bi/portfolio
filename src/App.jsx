@@ -5,22 +5,25 @@ import Skills from './components/Skills.jsx'
 import Projects from './components/Projects.jsx'
 import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
+import Certificates from './components/Certificates.jsx'
 import './App.css'
+import { ThemeProvider } from './contexts/ThemeContext'
 
-function App() {
+export default function App() {
   return (
-    <>
-      <Navigation />
-      <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
-      </main>
-      <Footer />
-    </>
+    <ThemeProvider>
+      <>
+        <Navigation />
+        <main>
+          <Hero />
+          <About />
+          <Skills />
+          <Projects />
+          <Certificates />
+          <Contact />
+        </main>
+        <Footer />
+      </>
+    </ThemeProvider>
   )
 }
-
-export default App 

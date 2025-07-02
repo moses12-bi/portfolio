@@ -1,4 +1,9 @@
 import { Github } from 'lucide-react';
+import Food from '../Image/Food.jpg';
+import Stock from '../Image/Stock.jpg';
+import HR from '../Image/HR.jpg';
+import Property from '../Image/Property.jpg';
+
 
 const Projects = () => {
   const projects = [
@@ -6,7 +11,7 @@ const Projects = () => {
       title: "Food delivery System",
       description:
         "A food delivery system that allows users to order food from restaurants and have it delivered to their doorstep.",
-      image: "/placeholder.svg?height=200&width=400",
+      image: Food, 
       technologies: [ "Spring Boot", "postman", "postgresql"],
       githubUrl: "https://github.com/moses12-bi/food-delivery-system", // Add your GitHub link when available
     },
@@ -14,9 +19,25 @@ const Projects = () => {
       title: "Stock Management System",
       description:
         "A robust inventory management solution that handles sales, purchases, and provides graphical reports for better business insights and security measures for login .",
-      image: "/placeholder.svg?height=200&width=400",
+      image: Stock,
       technologies: ["react", "Spring Boot", "postgresql", "postman"],
       githubUrl: "https://github.com/moses12-bi/inventory-management-system", // Add your GitHub link when available
+    },
+    {
+      title: "HR Management System",
+      description: "A comprehensive HR management platform for employee records, payroll, and performance tracking.",
+      image: HR, 
+      technologies: ["React", "Spring Boot", "MySQL", "Tailwind CSS"],
+      githubUrl: "https://github.com/moses12-bi/hr-management-system",
+     
+    },
+    {
+      title: "Property Management System",
+      description: "A web-based solution for managing rental properties, tenants, and payments.",
+      image: Property,
+      technologies: ["React", "Node.js", "Postgres", "springboot", "Tailwind CSS"],
+      githubUrl: "https://github.com/moses12-bi/property-management-system",
+
     },
   ]
 

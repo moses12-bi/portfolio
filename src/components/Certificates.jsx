@@ -29,17 +29,28 @@ const Certificates = () => (
         {certificates.map((cert, idx) => (
           <div key={idx} className="bg-white rounded-lg shadow-md p-6 flex flex-col items-start border border-gray-200">
             <h3 className="text-lg font-semibold mb-2 text-gray-800">{cert.title}</h3>
-            <a
-              href={cert.file}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-2 inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
-              download
-            >
-              View / Download PDF
-            </a>
+            <div className="flex gap-3 mt-2">
+              <a
+                href={cert.file}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+              >
+                View PDF
+              </a>
+              <a
+                href={cert.file}
+                download
+                className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition"
+              >
+                Download
+              </a>
+            </div>
           </div>
         ))}
+      </div>
+      <div className="text-center mt-12">
+        <p className="text-gray-700">Contact: <a href="mailto:mosesebagabo01@gmail.com" className="text-blue-600 hover:underline">mosesebagabo01@gmail.com</a></p>
       </div>
     </div>
   </section>

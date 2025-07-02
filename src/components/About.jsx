@@ -1,13 +1,7 @@
 import { Download } from "lucide-react"
-import { useDownload } from '../hooks/useDownload'
 
 const About = () => {
   const image = new URL('../Image/moses.png', import.meta.url).href
-  const { downloadFile, isLoading, error } = useDownload()
-
-  const handleDownload = () => {
-    downloadFile('/assets/resume.pdf', 'Sebagabo_Moses_Resume.pdf')
-  }
 
   return (
     <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-gray-100">
@@ -27,23 +21,16 @@ const About = () => {
                   Based in Kigali, Rwanda, I'm available for remote work opportunities and always excited to collaborate on new projects.
                 </p>
               </div>
-              <button
-                onClick={handleDownload}
-                disabled={isLoading}
-                className={`inline-flex items-center gap-2 bg-primary-600 text-white px-6 py-3 rounded-xl font-medium transition-colors mt-4 ${
-                  isLoading ? 'opacity-70 cursor-not-allowed' : 'hover:bg-primary-700'
-                }`}
+              <a
+                href="/Sebagabo-cv.pdf"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-primary-600 text-white px-6 py-3 rounded-xl font-medium transition-colors mt-4 hover:bg-primary-700"
               >
                 <Download className="w-5 h-5" />
-                {isLoading ? (
-                  <span className="animate-pulse">Downloading...</span>
-                ) : (
-                  <span>Download Resume</span>
-                )}
-              </button>
-              {error && (
-                <p className="mt-2 text-sm text-red-500">{error}</p>
-              )}
+                <span>Download CV</span>
+              </a>
             </div>
           </div>
           <div className="flex justify-center">
@@ -66,4 +53,4 @@ const About = () => {
   )
 }
 
-export default About; 
+export default About;

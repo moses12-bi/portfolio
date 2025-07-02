@@ -6,6 +6,7 @@ import Projects from './components/Projects.jsx'
 import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
 import Certificates from './components/Certificates.jsx'
+import Experience from './components/Experience.jsx'
 import './App.css'
 import { ThemeProvider } from './contexts/ThemeContext'
 
@@ -17,6 +18,7 @@ export default function App() {
         <main>
           <Hero />
           <About />
+          <Experience />
           <Skills />
           <Projects />
           <Certificates />
